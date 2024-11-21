@@ -3,16 +3,15 @@ const nunjucks = require('nunjucks');
 
 module.exports = new Transformer({
     async loadConfig({config}) {
-        const { contents, filePath } =
-            (await config.getConfig([
-                '.nunjucksrc',
-                '.nunjucksrc.js',
-            ])) || {
-                autoescape: true,
-            };
+        const { contents, filePath } = await config.getConfig([
+            '.nunjucksrc',
+            '.njkrc',
+            '.nunjucksrc.js',
+            '.njkrc.js',
+        ]);
 
-        if (contents) {
-            config.invalidateOnFileChange(filePath);
+        if (filePath.endsWith('.js')) {
+            config.invalidateOnStartup();
         }
 
         return contents;
