@@ -1,0 +1,30 @@
+{
+  "name": "parcel-transformer-nunjucks",
+  "version": "1.0.0",
+  "description": "Parcel transformer plugin for Nunjucks.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianpopp/parcel-transformer-nunjucks.git"
+  },
+  "keywords": [
+    "parcel",
+    "parcel-transformer",
+    "nunjucks",
+    "njk",
+    "plugin"
+  ],
+  "author": "Sebastian Popp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebastianpopp/parcel-transformer-nunjucks/issues"
+  },
+  "homepage": "https://github.com/sebastianpopp/parcel-transformer-nunjucks#readme",
+  "dependencies": {
+    "@parcel/plugin": "^2.0.0",
+    "nunjucks": "^3.0.0"
+  }
+}
