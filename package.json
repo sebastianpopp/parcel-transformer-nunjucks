@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Parcel transformer plugin for Nunjucks.",
   "main": "src/index.js",
+  "engines": {
+    "parcel": "2.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
